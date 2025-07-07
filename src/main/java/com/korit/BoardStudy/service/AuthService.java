@@ -56,7 +56,7 @@ public class AuthService {
 
             UserRole userRole = UserRole.builder()
                     .userId(user.getUserId())
-                    .RoleId(3)
+                    .roleId(3)
                     .build();
 
             int addUserRoleResult = userRoleRepository.addUserRole(userRole);

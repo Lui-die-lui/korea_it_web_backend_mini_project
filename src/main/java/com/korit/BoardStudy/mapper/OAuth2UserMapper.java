@@ -8,5 +8,5 @@ import java.util.Optional;
 @Mapper
 public interface OAuth2UserMapper {
     Optional<OAuth2User> getOAuth2UserByProviderAndProviderUserId(String provider, String providerUserId);
-    int addOAuth2USer(OAuth2User oAuth2User);
+    int addOAuth2User(OAuth2User oAuth2User);
 }

@@ -17,7 +17,7 @@ import java.util.List;
 public class UserRole {
     private Integer userRoleId;
     private Integer userId;
-    private Integer RoleId;
+    private Integer roleId;
     private LocalDateTime createDt;
     private LocalDateTime updateDt;
 

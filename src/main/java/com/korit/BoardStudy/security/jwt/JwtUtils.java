@@ -30,6 +30,15 @@ public class JwtUtils {
                 .compact();
     }
 
+    public String generateVerifyToken(String id) {
+        return Jwts.builder()
+                .subject("VerifyToken")
+                .id(id)
+                .expiration(new Date(new Date().getTime() + (1000L *60l *3L)))
+                .signWith(KEY)
+                .compact();
+    }
+
     public boolean isBearer(String token) {
         if (token == null) {
             return false;
